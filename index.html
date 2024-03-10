@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Famous Fastfood Survey</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title" style="font-size: 25px;"><strong>Famous Fastfood in the Philippines</strong></h5>
+    </div>
+    <div class="card-body">
+      <form>
+                <!-- Email -->
+        <div class="form-group mb-5">
+          <label>Please enter your email address:</label><br>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Your email address" required>
+      </div>
+          <!-- Number 1 -->
+            <div class="form-group">
+              <label>1. What is your preferred choice of fast food cuisine?</label><br>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fast_food_cuisine" id="jollibee" value="Jollibee">
+                <label class="form-check-label" for="jollibee">Jollibee</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fast_food_cuisine" id="mang_inasal" value="Mang Inasal">
+                <label class="form-check-label" for="mang_inasal">Mang Inasal</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fast_food_cuisine" id="kfc" value="KFC">
+                <label class="form-check-label" for="kfc">KFC</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fast_food_cuisine" id="greenwhich" value="Greenwhich">
+                <label class="form-check-label" for="greenwhich">Greenwhich</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fast_food_cuisine" id="mcdo" value="MCDO">
+                <label class="form-check-label" for="mcdo">MCDO</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fast_food_cuisine" id="maxs" value="Max's">
+                <label class="form-check-label" for="maxs">Max's</label>
+              </div>
+              <!-- Add more options here if needed -->
+            </div>
+
+            <!-- Number 2 -->
+            <div class="form-group">
+              <label>2. What factors influence your decision to choose a specific fast food restaurant?</label><br>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="decision_factors[]" id="price" value="Price">
+                <label class="form-check-label" for="price">Price</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="decision_factors[]" id="location" value="Location">
+                <label class="form-check-label" for="location">Location</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="decision_factors[]" id="menu_variety" value="Menu variety">
+                <label class="form-check-label" for="menu_variety">Menu variety</label>
+              </div>
+              <!-- Add more options here if needed -->
+            </div>
+
+            <!-- Number 3 -->
+            <div class="form-group">
+              <label>3. On Average how much would you expect to pay for a fast-food meal?</label><br>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="average_cost" id="cost_200" value="200">
+                <label class="form-check-label" for="cost_200">200</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="average_cost" id="cost_300" value="300">
+                <label class="form-check-label" for="cost_300">300</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="average_cost" id="cost_400" value="400">
+                <label class="form-check-label" for="cost_400">400</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="average_cost" id="cost_500" value="500">
+                <label class="form-check-label" for="cost_500">500</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="average_cost" id="cost_more_than_500" value="More than 500">
+                <label class="form-check-label" for="cost_more_than_500">More than 500</label>
+              </div>
+          </div>
+
+          <!-- Number 4 -->
+          <div class="form-group">
+            <label>4. You mostly go for:</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="meal_time" id="breakfast" value="Breakfast">
+              <label class="form-check-label" for="breakfast">Breakfast</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="meal_time" id="lunch" value="Lunch">
+              <label class="form-check-label" for="lunch">Lunch</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="meal_time" id="dinner" value="Dinner">
+              <label class="form-check-label" for="dinner">Dinner</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="meal_time" id="snack" value="Snack">
+              <label class="form-check-label" for="snack">Snack</label>
+            </div>
+          </div>
+
+          <!-- Number 5 -->
+          <div class="form-group">
+            <label>5. Does branding affect chosen fast food?</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="branding_effect" id="strongly_agree" value="Strongly Agree">
+              <label class="form-check-label" for="strongly_agree">Strongly Agree</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="branding_effect" id="agree" value="Agree">
+              <label class="form-check-label" for="agree">Agree</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="branding_effect" id="neutral" value="Neutral">
+              <label class="form-check-label" for="neutral">Neutral</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="branding_effect" id="disagree" value="Disagree">
+              <label class="form-check-label" for="disagree">Disagree</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="branding_effect" id="strongly_disagree" value="Strongly Disagree">
+              <label class="form-check-label" for="strongly_disagree">Strongly Disagree</label>
+            </div>
+          </div>
+
+          <!-- Number 6 -->
+          <div class="form-group">
+            <label>6. Do you use discount coupons to buy fast food?</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="discount_coupons" id="always" value="Always">
+              <label class="form-check-label" for="always">Always</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="discount_coupons" id="never" value="Never">
+              <label class="form-check-label" for="never">Never</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="discount_coupons" id="sometimes" value="Sometimes">
+              <label class="form-check-label" for="sometimes">Sometimes</label>
+            </div>
+          </div>
+
+          <!-- Number 7 -->
+          <div class="form-group">
+            <label>7. How often do you eat fast food?</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="eating_frequency" id="everyday" value="Everyday">
+              <label class="form-check-label" for="everyday">Everyday</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="eating_frequency" id="once_a_week" value="Once a week">
+              <label class="form-check-label" for="once_a_week">Once a week</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="eating_frequency" id="once_a_month" value="Once a month">
+              <label class="form-check-label" for="once_a_month">Once a month</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="eating_frequency" id="not_very_often" value="Not very often">
+              <label class="form-check-label" for="not_very_often">Not very often</label>
+            </div>
+          </div>
+
+          <!-- Number 8 -->
+          <div class="form-group">
+            <label>8. What influences your decision to try new items on a fast-food menu?</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="decision_influences[]" id="limited_time_promotions" value="Limited-time promotions">
+              <label class="form-check-label" for="limited_time_promotions">Limited-time promotions</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="decision_influences[]" id="recommendations" value="Recommendations from friends or family">
+              <label class="form-check-label" for="recommendations">Recommendations from friends or family</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="decision_influences[]" id="online_reviews" value="Online reviews">
+              <label class="form-check-label" for="online_reviews">Online reviews</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="decision_influences[]" id="appealing_advertisements" value="Appealing advertisements">
+              <label class="form-check-label" for="appealing_advertisements">Appealing advertisements</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="decision_influences[]" id="curiosity" value="Curiosity to explore new flavors">
+              <label class="form-check-label" for="curiosity">Curiosity to explore new flavors</label>
+            </div>
+          </div>
+
+          <!-- Number 9 -->
+          <div class="form-group">
+            <label>9. When considering variety, which fast-food chain do you find to have the most diverse menu options?</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="diverse_chain" id="jollibee_variety" value="Jollibee">
+              <label class="form-check-label" for="jollibee_variety">Jollibee</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="diverse_chain" id="mang_inasal_variety" value="Mang Inasal">
+              <label class="form-check-label" for="mang_inasal_variety">Mang Inasal</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="diverse_chain" id="kfc_variety" value="KFC">
+              <label class="form-check-label" for="kfc_variety">KFC</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="diverse_chain" id="greenwhich_variety" value="Greenwhich">
+              <label class="form-check-label" for="greenwhich_variety">Greenwhich</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="diverse_chain" id="mcdo_variety" value="MCDO">
+              <label class="form-check-label" for="mcdo_variety">MCDO</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="diverse_chain" id="maxs_variety" value="Max's">
+              <label class="form-check-label" for="maxs_variety">Max's</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="diverse_chain" id="chowking_variety" value="Chowking">
+              <label class="form-check-label" for="chowking_variety">Chowking</label>
+            </div>
+          </div>
+
+          <!-- Number 10 -->
+          <div class="form-group">
+            <label>10. Which of these fast-food establishments do you associate with the best promotions or discounts?</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="best_promotions" id="jollibee_promotions" value="Jollibee">
+              <label class="form-check-label" for="jollibee_promotions">Jollibee</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="best_promotions" id="mang_inasal_promotions" value="Mang Inasal">
+              <label class="form-check-label" for="mang_inasal_promotions">Mang Inasal</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="best_promotions" id="kfc_promotions" value="KFC">
+              <label class="form-check-label" for="kfc_promotions">KFC</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="best_promotions" id="greenwhich_promotions" value="Greenwhich">
+              <label class="form-check-label" for="greenwhich_promotions">Greenwhich</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="best_promotions" id="mcdo_promotions" value="MCDO">
+              <label class="form-check-label" for="mcdo_promotions">MCDO</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="best_promotions" id="maxs_promotions" value="Max's">
+              <label class="form-check-label" for="maxs_promotions">Max's</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="best_promotions" id="chowking_promotions" value="Chowking">
+              <label class="form-check-label" for="chowking_promotions">Chowking</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
